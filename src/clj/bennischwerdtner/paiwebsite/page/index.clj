@@ -31,7 +31,13 @@
            [{:person "Person A as Stadt"
              :text "Einfach die besten Lebkuchen"}
             {:person "Person A as Stadt"
-             :text "Einfach die besten Lebkuchen"}]]
+             :text (str "Einfach die besten Lebkuchen"
+                        "Einfach die besten Lebkuchen"
+                        "Einfach die besten Lebkuchen"
+                        "Einfach die besten Lebkuchen"
+                        "Einfach die besten Lebkuchen"
+                        "Einfach die besten Lebkuchen"
+                        "Einfach die besten Lebkuchen")}]]
        [:div
         {:class (css :flex :flex-col
                      :p-2 :bg-slate-100

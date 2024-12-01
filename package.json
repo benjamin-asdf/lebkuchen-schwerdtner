@@ -1,0 +1,13 @@
+{
+  "name": "paiwebsite",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "serve public"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
