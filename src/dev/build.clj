@@ -20,7 +20,7 @@
                {:entries
                   [clj.bennischwerdtner.paiwebsite.page.index]}})
          (cb/minify)
-         (cb/write-outputs-to (io/file "public" "css")))]
+         (cb/write-outputs-to (io/file "public")))]
     (doseq [mod (:outputs build-state)
             {:as warning :keys [warning-type]} (:warnings
                                                  mod)]

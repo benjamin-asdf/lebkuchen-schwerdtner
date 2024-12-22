@@ -2,7 +2,6 @@
   (:require
    [shadow.css :refer (css)]))
 
-
 ^{:page/html true}
 (defn page
   []

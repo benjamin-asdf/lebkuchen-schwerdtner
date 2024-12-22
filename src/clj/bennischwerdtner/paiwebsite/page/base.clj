@@ -11,7 +11,7 @@
       :name "viewport"}]
     [:link {:href "data:," :rel "shortcut icon"}]
     [:link {:href "data:," :rel "apple-touch-icon"}]
-    [:link {:href "/css/ui.css" :rel "stylesheet"}]
+    [:link {:href "/ui.css" :rel "stylesheet"}]
 
     ;; <link rel="preconnect" href="https://fonts.googleapis.com">
     ;; <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
