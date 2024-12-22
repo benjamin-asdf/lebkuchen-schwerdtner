@@ -4,6 +4,7 @@
             [clojure.java.io :as io]
             [clojure.edn :as edn]
             [hiccup.page :as hp]
+            [clj.bennischwerdtner.paiwebsite.page.index]
             [clj.bennischwerdtner.paiwebsite.page.base :as
              base]))
 
@@ -27,7 +28,7 @@
             (dissoc warning :warning-type)]))))
 
 
-(defn scittle-release
+#_(defn scittle-release
   []
   (doseq [file (filter #(str/ends-with? % ".cljs")
                        (file-seq (io/file "src" "cljs")))]
@@ -43,10 +44,8 @@
          [["index.html"
            (base/base
             (clj.bennischwerdtner.paiwebsite.page.index/page))]]]
-        (spit (io/file "public" file) (hp/html5 content)))))
+      (spit (io/file "public" file) (hp/html5 content)))))
 
 (comment
-  (scittle-release)
-  (pages-release true)
-
-  )
+  ;; (scittle-release)
+  (pages-release true))

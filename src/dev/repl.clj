@@ -24,13 +24,14 @@
                           [(io/file "src" "clj")]
                           ["cljs" "cljc" "clj"]
                           (fn [_]
-                            (try (println "refresh css")
-                                 (build/css-release)
-                                 (build/scittle-release)
-                                 (build/pages-release true)
-                                 (catch Exception e
-                                   (prn [:css-failed
-                                         e]))))))
+                            (try
+                              (println "-- build --")
+                              (build/css-release)
+                              ;; (build/scittle-release)
+                              (build/pages-release true)
+                              (catch Exception e
+                                (prn [:css-failed
+                                      e]))))))
   ::started)
 
 (defn stop []
